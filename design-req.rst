@@ -48,3 +48,18 @@ Peak power 2W
 Fixed attitude requirements (no major attitude correction in orbit)
 7 month unpowered room temp storage 
 Payload should include its own processing and data storage
+
+
+CSDC Requirements
+-----------------
+
+2.1 Spacecraft Structure and Materials
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:[DIETR-0010] Configuration and Dimensions: This size and configuration is called a “3U” or triple-cubesat. These dimensions apply to the spacecraft in the stowed (launch) configuration only. 
+:[DIETR-0020] Co-ordinate System: The spacecraft shall use the co-ordinate system as defined in Figure 2-3. The -Z face of the spacecraft will be inserted first into the dispenser.
+:[DIETR-0030] Spacecraft Structure Material: Aluminum 7075, 6061, 5005, and/or 5052 shall be used for both the main spacecraft structure and the corner rails.
+:[DIETR-0040] Surface Protuberances: Protuberances are permitted on the spacecraft XZ and YZ faces (i.e., the 100.0 x 340.5 mm spacecraft surfaces) inside the rails; however, protuberances shall not exceed 6.5 mm normal to any of these faces. Comment: This requirement applies to the spacecraft in the stowed (launch) configuration only.
+:[DIETR-0045] Corner Rails: The spacecraft shall have four (4) rails, one per corner, along the Z axis. Rail surfaces that contact the launch dispenser guide rails shall have a hardness equal to or greater than hard-anodized aluminum (Rockwell C 65-70).
+ :[DIETR-0050] Corner Rail Anodisation: The spacecraft corner rails and standoffs shall be hard-anodised in order to prevent coldwelding within the dispenser. 
+ 
