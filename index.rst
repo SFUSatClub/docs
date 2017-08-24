@@ -3,6 +3,7 @@ Radio Telescope Calibration CubeSat
 
 TODO: Write abstract about team and mission
 
+.. _mission
 
 .. toctree::
 	:maxdepth: 2
@@ -12,6 +13,7 @@ TODO: Write abstract about team and mission
 	Concept of Operations
 	Design Requirements
 
+.. _subsystem
 
 .. toctree::
 	:maxdepth: 2
@@ -26,6 +28,7 @@ TODO: Write abstract about team and mission
 	Structural
 	Ground Station
 
+.. _contact
 
 .. toctree::
 	:maxdepth: 2
