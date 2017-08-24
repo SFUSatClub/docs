@@ -5,14 +5,14 @@ Concept of Operations
 
 
 Payload Objective
-=========================
+-----------------
 CHIME requires characterizing the complex gains of the telescope. Characterization in the longitudinal direction is performed with natural astronomical sources sweeping east to west of the sky. It is however difficult to kind a similar source to characterize the complex gain along the latitudinal axis. An orbiting artificial source with knowledge of signal characteristic moving with a longitudinal component relative to the telescope can provide the additional information needed to fully characterize CHIME’s performance. Signal characteristics is the time dependent power received at the telescope with an accuracy of 1:10^4 relative to the telescope’s antenna beam.
 
 TODO: make success matrix
 
 
 Operating Parameters
-========================
+-----------------
 CHIME requires <1 degree phase uncertainty which requires 1.08 deg euler angle uncertainty of spacecraft position from the perspective of CHIME. Assuming a worst cast of 400km circular sun-synchronous orbit (assume 7.5km/s orbital velocity). A small angle approximation at the height in the horizon per second: atan(7.5km/400km) = 1 deg/s. Minimum sample rate is 1 Hz. This can be increased to increase accuracy. This data will need to be time stamped to a greater accuracy.
 
 CHIME can only store data for a few seconds, therefore the ground reference station must be on site at DRAO.
@@ -32,7 +32,7 @@ The reference ground station will be at DRAO. It will be a 2 DOF active Yagi (>1
 The payload will consist of a radio transmitter with one or more carriers in the 400 MHz to 800 MHz band. The carriers will be modulated with a predefined binary sequence with a bounded small cross-correlation within a set that will be used by CHIME to isolate the payload signal from other sources. The transmitter will require a reliable controller to enable transmissions dependent on current location above standard earth coordinates to comply with international telecommunications regulations. The transmitter will operate continuously while within line of sight of the telescope and fall silent when not. The payload will require a capability to record and transmit time dependent position and attitude data to be used by the ground segment. This spatial data can either be time-series data taken throughout the fly-by or a single point used as an initial condition in a orbital and attitude propagation model. The ground segment will take this data and compute the time dependent power density received at the telescope which will then be handed off to CHIME researchers for use in calibrating their telescope.
 
 External Stakeholders
-==========================
+-----------------
 
 Current deliberation to determine mission requirements is being done in collaboration with Gilbert Hsyu MSc and Dr,. Seth Siegel both members of McGill Cosmology Instrumentation Laboratory. Gilbert Hsyu has been primarily working on calibrating CHIME. We have also been in talks with Dr. Keith Vanderlinde, U of T Dept. of Astronomy and Astrophysics. CHIME is a collaboration between UBC, U of T, McGill, and Dominion Radio Astrophysical Observatory. Dr. Rodney Vaughan of SFU Engineering Science is advising on instrumentation and antenna development for the payload.
 Responsibilities for Work
@@ -45,13 +45,13 @@ Integration work may be shared with the RF Comms subsystem due to shared resourc
 Once in orbit, the payload will require further characterization from the ground before it can be used by CHIME. The extent of on-orbit characterization required is yet unknown. Once characterize we can move into the CHIME calibration campaign; the length of which is yet unknown. Ground operations will need to determine the time-series power density at the Dominion Observatory for the duration of the CHIME calibration campaign. The ground power density with the binary sequence will be sent to the appropriate authority of the CHIME team.  CHIME characterization will be revisited until CHIME or the spacecraft’s end-of-life.
 
 Adherence to CSDC, CubeSat and other constraints
-====================================================
+-----------------
 The activities required leading up to payload integration with spacecraft are is achievable within the time frame given by the CSDC. In order to have a latitudinal component to the spacecraft as it flies over the telescope, the orbital inclination must be above that of the latitude of the Dominion Radio Observatory (49.3°). Section 3.2 of CSDC General Rules & Requirements recommends a sun-synchronous(98°) or ISS(51°) orbiting mission. The requirement CSDC-0020 and the payload requires post-launch spacecraft orbit determination capabilities with an accuracy that will be determined at a later date. The payload contains only electronics and antenna structure and other materials that are non-volatile and stable for storage(CSDC-0030, CSDC-0050). The mission can operate for several year or months under agreement with Industry Canada and FCC as described in the section Development, Integration, Operation(CSDC-0040, CSDC-0080, CSDC-0160, CSDC-0220, CSDC-0230, CDS-3.4.1, CDS-3.4.2). Attitude determination must be fault tolerant for successful mission operation in the event of a failure(CSDC-0170). Electronics are all common COTS components(CSDC-0190). The payload may have antenna deploying from CubeSat(CDS-3.1.2, CDS-3.2.4, CDS-3.4.4). Power needs are comparable to the telemetry radio; requires no significantly large power storage (CDS-3.1.6). COTS component outgassing will need to be determined(CDS-3.1.8)
 Data Delivery
 Mission Data
 
 Housekeeping
-================
+-----------------
 In accordance with CSDC-0120, we shall record 4 points of telemetry at least once every 5 minutes. Larry has said that data points for 4 batteries = 1 telemetry item. 
 
 Collection frequencies will default to 5 minutes if appropriate, but can be changed from the ground. Additionally, other telemetry points can be added to this list, and it may be different depending on system state. For example, in safe mode, it would be wise to transmit antenna deployment state.
@@ -74,7 +74,7 @@ Spacecraft state
 “Command Handbook”
 
 Tasking, Scheduling and Control
-====================================
+-----------------
 Synchronization of clock between ground and spacecraft: satellite mission epoch will be sent out at the time of each telemetry packet transmission. Additionally, current mission epoch can be requested at any time. Mission epoch is accurate to the second.
 
 Scheduling: commands can be scheduled for an arbitrary time in the future, or to be run immediately. The system will save the command queue to triple redundant flash and to internal EEPROM at each change, so it can be recovered in the event of a power loss. 
@@ -95,7 +95,7 @@ What is the sampling frequency of the ground station power meters?
 What is the hardware link to CHIME?
 
 Mission Timeline
-======================
+-----------------
 4 switches: 
 Pull before flight
 3 switches that engage on deployment
