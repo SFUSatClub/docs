@@ -1,3 +1,5 @@
+.. _con-ops:
+
 Concept of Operations
 ========================
 
