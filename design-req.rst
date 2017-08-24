@@ -2,7 +2,7 @@ High Level Design Requirements
 ===================================
 These represent estimated requirements for the team to discuss, elaborate on, and push back on.
 
-Informed by :ref:`Concept of Operations`
+Informed by :ref:`con-ops`
 Satellite Requirements
 Mission life: 1 year
 Bus size 1U
