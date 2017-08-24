@@ -9,8 +9,8 @@ TODO: Write abstract about team and mission
 	:maxdepth: 2
 	:caption: Mission Design
 
-	Concept of Operations
-	Design Requirements
+	con-ops
+	design-req
 
 .. _subsystem
 
@@ -18,13 +18,13 @@ TODO: Write abstract about team and mission
 	:maxdepth: 2
 	:caption: Subsystems
 
-	Attitude Control
-	On-board Computer
-	Power
-	Radio
-	Sensors
-	Structural
-	Ground Station
+	attitude-ctl
+	obc
+	power
+	radio
+	sensors
+	structural
+	ground-stn
 
 .. _contact
 
@@ -32,4 +32,4 @@ TODO: Write abstract about team and mission
 	:maxdepth: 2
 	:caption: Contact
 
-	Email, Facebook, Slack
+	contact
