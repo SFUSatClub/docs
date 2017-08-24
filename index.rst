@@ -7,7 +7,6 @@ TODO: Write abstract about team and mission
 
 .. toctree::
 	:maxdepth: 2
-	:hidden:
 	:caption: Mission Design
 
 	Concept of Operations
@@ -17,7 +16,6 @@ TODO: Write abstract about team and mission
 
 .. toctree::
 	:maxdepth: 2
-	:hidden:
 	:caption: Subsystems
 
 	Attitude Control
@@ -32,7 +30,6 @@ TODO: Write abstract about team and mission
 
 .. toctree::
 	:maxdepth: 2
-	:hidden:
 	:caption: Contact
 
 	Email, Facebook, Slack
