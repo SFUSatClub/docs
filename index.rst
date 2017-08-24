@@ -30,6 +30,8 @@ TODO: Write abstract about team and mission
 
 .. toctree::
 	:maxdepth: 2
-	:caption: Contact
-
+	:caption: About
+	
+	CSDC
+	outreach
 	contact
