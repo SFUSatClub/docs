@@ -6,14 +6,17 @@ Concept of Operations
 
 Payload Objective
 -----------------
-CHIME requires characterizing the complex gains of the telescope. Characterization in the longitudinal direction is performed with natural astronomical sources sweeping east to west of the sky. It is however difficult to kind a similar source to characterize the complex gain along the latitudinal axis. An orbiting artificial source with knowledge of signal characteristic moving with a longitudinal component relative to the telescope can provide the additional information needed to fully characterize CHIME’s performance. Signal characteristics is the time dependent power received at the telescope with an accuracy of 1:10^4 relative to the telescope’s antenna beam.
+CHIME requires characterizing the complex gains of the telescope. Characterization in the longitudinal direction is performed with natural astronomical sources sweeping east to west of the sky. It is however difficult to kind a similar source to characterize the complex gain along the latitudinal axis. An orbiting artificial source with knowledge of signal characteristic moving with a longitudinal component relative to the telescope can provide the additional information needed to fully characterize CHIME’s performance. Signal characteristics is the time dependent power received at the telescope with an accuracy of :math:`1:10^4` relative to the telescope’s antenna beam.
 
 TODO: make success matrix
 
 
 Operating Parameters
 -----------------
-CHIME requires <1 degree phase uncertainty which requires 1.08 deg euler angle uncertainty of spacecraft position from the perspective of CHIME. Assuming a worst cast of 400km circular sun-synchronous orbit (assume 7.5km/s orbital velocity). A small angle approximation at the height in the horizon per second: atan(7.5km/400km) = 1 deg/s. Minimum sample rate is 1 Hz. This can be increased to increase accuracy. This data will need to be time stamped to a greater accuracy.
+CHIME requires <1 degree phase uncertainty which requires 1.08 deg euler angle uncertainty of spacecraft position from the perspective of CHIME. A small angle approximation at the heighest point in the horizon is used to compute the angular velocity. The maximum traversal across the sky per second is
+.. math::
+  arctan(\\frac{v_{orbit} \dot 1s}{h_{altitude}}) = 1 deg
+where :math:`v_{oribit}` is assumed to be 7.5km/s and :math:`h_{altitude}` of 400km. Minimum sample rate is therefore 1 Hz. This can be increased to increase accuracy. This data will need to be time stamped to a greater accuracy.
 
 CHIME can only store data for a few seconds, therefore the ground reference station must be on site at DRAO.
 
