@@ -18,13 +18,13 @@ TODO: Write abstract about team and mission
 	:maxdepth: 2
 	:caption: Subsystems
 
-	attitude-ctl
-	obc
-	power
-	radio
-	sensors
-	structural
-	ground-stn
+	attitude-ctl/index
+	obc/index
+	power/index
+	radio/index
+	sensors/index
+	structural/index
+	ground-stn/index
 
 .. _contact
 
