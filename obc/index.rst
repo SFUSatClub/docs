@@ -18,8 +18,9 @@ Current command format follows the structure of::
   <command> <subcommand> [<args>...]
 
 
-Overview of useful commands currently implemented:
-.....................................................
+Overview
+........
+Here are the useful commands that are currently implemented::
 
   get tasks
   get runtime
