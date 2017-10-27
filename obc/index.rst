@@ -4,22 +4,23 @@ OBC Subsystem
 Serial Interface
 ~~~~~~~~~~~~~~~~~~~~
 Baud: 115200
+
 Line ending: CRLF
+
 Recommended serial terminal: `miniterm.py`_
 
 The OBC does not echo back characters as you type, but it will send back the
 full command it received once you hit enter (i.e., when the OBC encounters a
 CRLF EOL sequence).
 
-Current command format follows the structure of:
+Current command format follows the structure of::
 
-::
   <command> <subcommand> [<args>...]
+
 
 Overview of useful commands currently implemented:
 .....................................................
 
-::
   get tasks
   get runtime
   get heap
@@ -50,17 +51,17 @@ get
   runtime
 	Show task CPU utilization statistics.
 	::
-      Task            Abs             Perc
-      serial          13409184                1%
-      IDLE            954919186               95%
-      tickle          57110           <1%
-      main            3053180         <1%
-      FreqPST         51296           <1%
-      state           14571           <1%
-      InfreqPST       12141           <1%
-      Receiver        510286          <1%
-      radio           30604595                3%
-      blinky          54453           <1%
+	  Task            Abs             Perc
+	  serial          13409184                1%
+	  IDLE            954919186               95%
+	  tickle          57110           <1%
+	  main            3053180         <1%
+	  FreqPST         51296           <1%
+	  state           14571           <1%
+	  InfreqPST       12141           <1%
+	  Receiver        510286          <1%
+	  radio           30604595                3%
+	  blinky          54453           <1%
 
   heap
 	Show amount of heap currently available.
